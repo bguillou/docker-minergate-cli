@@ -5,8 +5,8 @@ RUN apt update \
     && apt --yes install wget \
     && apt --yes install libpcre16-3 libxcb1
 
-RUN wget https://minergate.com/download/ubuntu-cli \
-    && dpkg -i ubuntu-cli
+RUN wget https://minergate.com/download/xfast-ubuntu-cli \
+    && dpkg -i xfast-ubuntu-cli
 
 ARG USER_NAME
 ENV USER_NAME ${USER_NAME}
